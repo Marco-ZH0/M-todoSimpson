@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método de Simpson</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shourtcut icon" href="./img/icono.ico">
+</head>
+<body>
+    <link class="contenido">
+        <h1>Métodos Numéricos</h1> <br>
+        <h2>Método de Simpson</h2><br>
+        <ol>
+            <li>Mathus Evangelista Eliud Vladimir</li>
+            <li>Pérez Torres Iván Gabriel</li>
+            <li>Zamora Hernández Marco Antonio</li><br>
+        </ol>
+        <ol>
+            Profesor: Eder Geovanni Ramírez Corona 
+        </ol><br>
+        <hr><br><br>
+        <h2>  REGLA DE SIMPSON</h2>  <br>
+        <p> La regla de Simpson reemplaza la suma de áreas de los trapecios por la suma de las
+            áreas situadas por debajo de las parábolas para aproximar la integral en un intervalo definido. <br>
+            Al igual que en la regla de los trapecios dividimos el intervalo [a , b] en n intervalos de igual
+            longitud ( n deberá ser un numero para).</p><br>
+
+            <h2>La regla de Simpson es la siguiente:</h2><br>
+            <ol>
+                <li>f(x) es llamado el integrando</li>
+                <li>a = es el límite inferior de integración</li>
+                <li>b = es el límite superior de integración</li>
+            </ol><br>
+
+            <h2>La Regla de 1/3 de Simpson</h2>
+            <img src="./img/grafica.png" class="imagenes">
+
+            <p>Como se muestra en el diagrama anterior, el integrando f(x) es aproximado por un
+                polinomio de segundo orden, el interpolante cuadrático es P(x). <br><br> Sigue la aproximación</p>
+                <img src="./img/formula1.png" class="imagenes"><br><br>
+            
+                <p>Reemplazando (b-a)/2 como h, obtenemos</p>
+                <img src="./img/formula2.png" class="imagenes"><br><br>
+
+                <p>Como puedes ver, hay un factor de 1/3 en la expresión anterior.
+                    Por eso, se llama la Regla de 1/3 de Simpson,
+                    si una función es altamente oscilatorio o carece de derivados en ciertos
+                    puntos, entonces la regla anterior puede no producir resultados precisos. <br>
+                    Una forma común de manejar esto es usando el enfoque de la regla compuesta
+                    de Simpson. Para ello, dividir [a,b] en pequeños subintervalos, y luego aplicar
+                    la regla de Simpson a cada subintervalo. Luego, sumar los resultados de cada
+                    cálculo para producir una aproximación sobre la integral completa.
+                    Si el intervalo [a,b] se divide en n subintervalo, y n es un número
+                    par, la regla compuesta de Simpson se calcula con la siguiente fórmula:
+                    </p><br>
+                    
+                    <img src="./img/formula3.png" class="imagenes"><br><br>
+
+            <h2>La Regla de 3/8 de Simpson</h2><br>
+            <p>La regla de 3/8 de Simpson es similar a la regla de 1/3 de Simpson, con
+                la única diferencia de que, para la regla de 3/8, el interpolante es un
+                polinomio cúbico. Aunque la regla de 3/8 utiliza un valor de función más,
+                es aproximadamente dos veces más precisa que la regla de 1/3. <br><br>
+                
+                La regla de 3/8 de Simpson establece:</p>
+
+                <img src="./img/formula4.png" class="imagenes"><br><br>
+
+                <p>Reemplazando (b-a)/3 como h, obtenemos:</p>
+                <img src="./img/formula5.png" class="imagenes"><br><br>
+
+                <p>La regla de 3/8 de Simpson para n intervalos (n debería ser un múltiplo de 3):</p>
+                <img src="./img/formula6.png" class="imagenes"><br><br>
+
+            <h2>Conclusiones</h2><br>
+            <li>La integración con métodos numéricos es una herramienta útil cuando se trata de integrar una función muy complicada o datos tabulados.</li>
+            <li>Con el método de Simpson se puede aproximar una integral compleja a la integral de un polinomio.</li>
+            <li>Con el método de Simpson se logra convertir matemáticas superiores en aritméticas básicas.</li>
+            <li>La regla de Simpson de 1/3 es útil cuando se tiene una cantidad par de segmentos y una cantidad impar de puntos.</li>
+            <li>La regla de Simpson de 3/8 es útil cuando se tiene impar de segmentos y una cantidad par de puntos.</li>
+            <li>La regla de Simpson de 1/3 y la de 3/8 se pueden aplicar juntas sobre una misma curva para obtener exactitudes de tercer orden sobre todo un intervalo.</li>
+            <li>Tanto la regla de Simpson de 1/3 y 3/8 es más exacta que otros formas numéricas de aproximar la integral como la regla del trapecio.</li>
+                <br>
+            <h2>Bibliografía</h2><br>
+            <a href="https://es.slideshare.net/joearroyosuarez/mtodo-numrico-regla-de-simpson-40704043">https://es.slideshare.net/joearroyosuarez/mtodo-numrico-regla-de-simpson-40704043</a><br><br>
+
+            <a href="https://flexbooks.ck12.org/cbook/c%C3%A1lculo-2.0/section/5.11/primary/lesson/integraci%C3%B3n-num%C3%A9rica%3A-regla-de-simpson-calc-spn/">https://flexbooks.ck12.org/cbook/c%C3%A1lculo-2.0/section/5.11/primary/lesson/integraci%C3%B3n-num%C3%A9rica%3A-regla-de-simpson-calc-spn/</a><br><br>
+
+            <a href="https://www.freecodecamp.org/espanol/news/la-regla-de-simpson-la-formula-y-como-funciona/">https://www.freecodecamp.org/espanol/news/la-regla-de-simpson-la-formula-y-como-funciona/</a><br><br>
+
+            <a href="https://esimecuanalisisnumerico.wordpress.com/category/unidad-v-diferenciacion-e-integracion-numerica/">https://esimecuanalisisnumerico.wordpress.com/category/unidad-v-diferenciacion-e-integracion-numerica/</a><br><br>
+            
+            <li></li>
+            <li></li>
+            <li></li>
+    </div>
+</body>
+</html>
